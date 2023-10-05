@@ -185,3 +185,50 @@ color: hsl(0, 0%, 100%);
 color: hsl(228, 45%, 44%); 
 text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+        gap: 1.25em;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: space-between;
+    }
+    .form-section {
+        flex-direction: column-reverse;
+        aspect-ratio: initial;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+        gap: 1.0em;
+    }
+    article {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding: 0 5%;
+    }
+    h1 {
+        font-size: 3.0em;
+    }
+    .illustration-sign {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 1.0em 1.0em;
+    }
+    .success-section {
+        aspect-ratio: initial;
+        width: 100%;
+        height: 100%;
+        padding: 6%;
+        padding-top: 12%;
+        border-radius: 0;
+    }
+    .success-section button {
+        margin-top: 65%;
+    }
+    .attribution {
+        position: relative;
+        color: hsl(231, 7%, 60%);
+    }
+}
