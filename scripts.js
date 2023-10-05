@@ -51,3 +51,11 @@ function validate() {
     }
   }
 }
+
+const isMobile = window.innerWidth <= 500;
+
+if (isMobile) {
+  document.querySelector('.illustration-sign').src = "./assets/images/illustration-sign-up-mobile.svg";
+} else {
+  console.log('');
+}
